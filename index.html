@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Concession Evaluation | Field Observation</title>
+</head>
+<body>
+    <div class="mainwrapper">
+    <header>
+        <img id="statefairlogo"/>
+        <h1>Concession Evaluation - Field Observation</h1>
+    </header>
+        <form action="">
+            <fieldset>
+                <label class="audcol-1"><strong>Day</strong></label>
+                <input type="text" class="audcol-1_2" name="Day" placeholder="Monday">
+                <label class="audcol-1"><strong>Date</strong></label>
+                <input type="date" class="audcol-1_2" name="Date">
+                <label class="audcol-1_2"><strong>Time of Check</strong></label>
+                <input type="time" class="audcol-1_2" name="Time">
+                <label class="audcol-2_1"><strong>Concessionaire</strong></label>
+                <input type="text" class="audcol-2_2" name="Concessionaire">
+                <label class="audcol-2_1">
+                    <strong>Location</strong></label>
+                <input type="text" class="audcol-2_2" name="Location">
+                <label class="audcol-2_1"><strong>Auditor</strong></label>
+                <input type="text" class="audcol-2_2" name="Auditor">
+            </fieldset>
+            <fieldset>
+                <legend><strong>Register</strong></legend>
+                <label class="regcol-1_1">Description of Register</label>
+                <textarea rows="2" name="Register Description"></textarea>
+                <br>
+                <label class="regcol-1_1">Dollar amount provided for the transaction</label>
+                <input type="dollar" name="Dollar Amount Returned" value="$" class="regcol-1_2">
+                <input type="text" name="Supervisor Initials" maxlength="3" placeholder="Supervisor Initials" class="regcol-1_2">
+                <input type="text" name="Employee Initials" maxlength="3" placeholder="Employee Initials" class="regcol-1_2">
+                <br>
+                <label class="regcol-1_1">Dollar amount returned for the transaction</label>
+                <input type="dollar" name="Dollar Amount Returned" value="$" class="regcol-1_2">
+                <input type="text" name="Supervisor Initials" maxlength="3" placeholder="Supervisor Initials" class="regcol-1_2">
+                <input type="text" name="Employee Initials" maxlength="3" placeholder="Employee Initials" class="regcol-1_2">
+            </fieldset>
+            <fieldset>
+                <legend><strong>Actions of Concession Employee</strong></legend>
+                <label class="empcol-1_1">Description of concession employee</label>
+                <textarea rows="5" name="Concession Employee Description"></textarea>
+                <ol>
+                    <li class="empcol-1_1"><label>Was money placed in the cash register?</label></li>
+                    <div class="empcol-1_2">
+                        <input type="radio" name="Money placed in register?" value="yes">Yes
+                        <input type="radio" name="Money placed in register?" value="no">No
+                    </div>
+                    <br>
+                    <li class="empcol-1_1"><label>Was the sale accurately registered on the cash register?</label></li>
+                    <div class="empcol-1_2">
+                        <input type="radio" name="Sale accurately registered?" value="yes">Yes
+                        <input type="radio" name="Sale accurately registered?" value="no">No
+                    </div>
+                    <br>
+                    <li class="empcol-1_1"><label>Was cash drawer closed between transactions?</label></li>
+                    <div class="empcol-1_2">
+                        <input type="radio" name="Drawer reclosed?" value="yes">Yes
+                        <input type="radio" name="Drawer reclosed?" value="no">No
+                    </div>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Observations</strong></legend>
+                    <label class="obscol-1_1">If money was not registered into the cash register, how was it handled?</label>
+                    <textarea rows="5" name="Unregistered money handled"></textarea>
+                    <br>
+                    <label class="obscol-1_1">Other descriptions of concession's activities: (all items purchased, recorded, register in training mode, etc.)</label>
+                    <textarea rows="5" name="Other activities"></textarea>
+                    <br>
+                    <label class="obscol-2_1">Did you observe other transactions?</label>
+                    <div class="obscol-2_2">
+                        <input type="radio" name="Other Transactions?" value="yes">Yes
+                        <input type="radio" name="Other Transactions?" value="no">No
+                    </div>
+                    <br>
+                    <label class="obscol-3_1">What dollar amount was rung up before and after your purchase?</label>
+                    <div class="obscol-3_1">
+                        <input type="number" class="obscol-3_1" name="Before purchase" placeholder="Before">
+                        <input type="number" class="obscol-3_1" name="After purchase" placeholder="After">
+                    </div>
+                    <label class="obscol-1_1">Description of other sales - (Was money placed in cash register? Was sale accurately recorded on register? Where was the money placed?)</label>
+                    <textarea rows="6" name="Description of other sales"></textarea>
+                    <br>
+                    <div class="obscol-1_1">
+                        <input type="text" class="obscol-3_1" name="Employee signature" placeholder="Employee Signature">
+                        <input type="text" class="obscol-3_1" name="Supervisor signature" placeholder="Supervisor Signature">
+                    </div>
+            </fieldset>
+            <div class="subbtn">
+                <input type="submit" class="conevalsubbtn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
